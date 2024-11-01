@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+<script defer src="main.js"></script></head>
+<body>
+  <h1>
+    Battleship
+  </h1>
+  <div class="container">
+    <form action="" method="post">
+      <fieldset>
+        <legend>
+          Ship Number
+        </legend>
+        <label for="ship1">Ship 1</label>
+        <input type="radio" name="ship" id="ship1" checked value="ship1">
+        <label for="ship1">Ship 2</label>
+        <input type="radio" name="ship" id="ship2" value="ship2">
+        <label for="ship1">Ship 3</label>
+        <input type="radio" name="ship" id="ship3" value="ship3">
+        <label for="ship1">Ship 4</label>
+        <input type="radio" name="ship" id="ship4" value="ship4">
+        <label for="ship1">Ship 5</label>
+        <input type="radio" name="ship" id="ship5" value="ship5">
+      </fieldset>
+      <fieldset>
+        <legend>
+          Orientation
+        </legend>
+        <label for="horizontal">Horizontal</label>
+        <input type="radio" name="orientation" id="horizontal" checked value="horizontal">
+        <label for="vertical">Vertical</label>
+        <input type="radio" name="orientation" id="vertical" value="vertical">
+      </fieldset>
+      <fieldset>
+        <legend>
+          Start Coordinates
+        </legend>
+        <label for="posX">X Position</label>
+        <input type="number" name="posX" id="posX" min="0" max="9" required>
+        <label for="posY">Y Position</label>
+        <input type="number" name="posY" id="posY" min="0" max="9" required>
+      </fieldset>
+      <button type="submit">Place Ship</button>
+    </form>
+    <button class="ship-form">Place Ship</button>
+  </div>
+  <footer>
+    Yende Mangum
+  </footer>  
+</body>
+</html>
